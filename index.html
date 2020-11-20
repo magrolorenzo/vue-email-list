@@ -13,9 +13,9 @@
     </head>
     <body>
         <div id="root">
-            <ul class="mail-contaier" v-if="mail_array.length == 10">
-                <li v-for="mail in mail_array" >
-                    {{mail}}
+            <ul class="mail-container" v-if="mail_array.length == 10">
+                <li v-for="(mail, index) in mail_array" >
+                    {{(index+1) + " - " +mail}}
                 </li>
             </ul>
         </div>
